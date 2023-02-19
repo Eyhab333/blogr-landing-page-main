@@ -1,0 +1,535 @@
+@import "function";
+
+// RESETS
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+// /* ####### */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  main {
+    // =========== hero ===================
+    .hero {
+      background-image: url(./images/bg-hero-mobile.svg),
+        linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0px 0px 0px 100px;
+      height: toRem(600);
+      margin-bottom: toRem(100);
+      padding-left: toRem(24);
+      padding-right: toRem(24);
+
+      header {
+        padding-top: toRem(56);
+        .logo {
+          width: toRem(82);
+          height: toRem(32);
+          margin-bottom: toRem(108);
+        }
+
+        nav {
+          display: none;
+          .header__first-ul {
+            li {
+              a {
+              }
+            }
+          }
+
+          .header__second-ul {
+            li {
+              a {
+              }
+            }
+          }
+        }
+      }
+
+      .text-hero {
+        h1 {
+          font-family: "Overpass";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 55px;
+          text-align: center;
+          letter-spacing: -1.08px;
+          color: #ffffff;
+        }
+
+        p {
+          font-family: "Overpass";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          color: #ffffff;
+          margin-bottom: toRem(38);
+        }
+
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          button {
+            font-family: "Ubuntu";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: right;
+            padding: toRem(15);
+            border-radius: 28px;
+          }
+
+          .btn--start {
+            color: #ff505c;
+            background: #ffffff;
+          }
+
+          .btn--learn {
+            color: white;
+            background: transparent;
+            border: 1px solid #ffffff;
+          }
+        }
+      }
+    }
+
+    // =========== designed ===============
+    .designed {
+      padding-left: toRem(24);
+      padding-right: toRem(24);
+
+      h2 {
+        font-family: "Overpass";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 43px;
+        text-align: center;
+        letter-spacing: -0.84px;
+        color: #1f3e5a;
+        margin-bottom: toRem(38);
+      }
+
+      .flex-designed {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .text {
+          text-align: center;
+
+          .first-text {
+            margin-bottom: toRem(40);
+          }
+
+          .second-text {
+            margin-bottom: toRem(273);
+          }
+
+          h3 {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: center;
+            color: #1f3e5a;
+            margin-bottom: toRem(16);
+          }
+
+          p {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #4c5862;
+          }
+        }
+
+        .img {
+          margin-bottom: toRem(46);
+        }
+      }
+    }
+
+    // =========== state ===============
+    .state {
+      background-image: url(./images/bg-pattern-circles.svg),
+        linear-gradient(360deg, #2d2e40 0%, #3f4164 100%);
+      background-color: #2d2e40;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center -140px;
+      border-radius: 0px 100px;
+      margin-bottom: toRem(79);
+      padding: toRem(221) toRem(24) toRem(109) toRem(24);
+      position: relative;
+
+      .flex-state {
+        .img {
+          position: absolute;
+          top: -170px;
+        }
+
+        .text {
+          h2 {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 61px;
+            text-align: center;
+            letter-spacing: -1.2px;
+            color: #ffffff;
+            margin-bottom: toRem(10);
+          }
+
+          p {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    // =========== free ===============
+    .free {
+      padding-left: toRem(24);
+      padding-right: toRem(24);
+      margin-bottom: toRem(40);
+
+      .flex-free {
+        .img {
+          margin-bottom: toRem(46);
+          width: toRem(328);
+        }
+
+        .text {
+          text-align: center;
+
+          .first-text {
+            margin-bottom: toRem(40);
+          }
+
+          .second-text {
+          }
+
+          h3 {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: center;
+            color: #1f3e5a;
+            margin-bottom: torem(16);
+          }
+
+          p {
+            font-family: "Overpass Light";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: #4c5862;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: #24242c;
+    border-radius: 0px 100px 0px 0px;
+    padding: toRem(75) toRem(24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      width: toRem(100.62);
+      height: toRem(39.43);
+      margin-bottom: toRem(72);
+    }
+
+    .product {
+      margin-bottom: toRem(40);
+    }
+
+    .company {
+      margin-bottom: toRem(40);
+    }
+
+    .Connect {
+    }
+
+    p {
+      font-family: "Ubuntu";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 33px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: toRem(21);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      margin-bottom: toRem(7);
+    }
+
+    a {
+      font-family: "Ubuntu";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 33px;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.75;
+      
+    }
+  }
+}
+
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  main {
+    // =========== hero ===================
+    .hero {
+      background-image: url(./images/bg-hero-desktop.svg),
+        linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0px 0px 0px 100px;
+      height: toRem(600);
+
+      header {
+        .logo {
+        }
+
+        nav {
+          .header__first-ul {
+            li {
+              a {
+              }
+            }
+          }
+
+          .header__second-ul {
+            li {
+              a {
+              }
+            }
+          }
+        }
+      }
+
+      .text-hero {
+        h1 {
+        }
+
+        p {
+        }
+
+        .buttons {
+          .btn--start {
+          }
+
+          .btn--learn {
+          }
+        }
+      }
+    }
+
+    // =========== designed ===============
+    .designed {
+      h2 {
+      }
+
+      .flex-designed {
+        .text {
+          .first-text {
+          }
+
+          .second-text {
+          }
+
+          h3 {
+          }
+
+          p {
+          }
+        }
+
+        .img {
+        }
+      }
+    }
+
+    // =========== state ===============
+    .state {
+      .flex-state {
+        .img {
+        }
+
+        .text {
+          h2 {
+          }
+
+          p {
+          }
+        }
+      }
+    }
+
+    // =========== free ===============
+    .free {
+      .flex-free {
+        .img {
+        }
+
+        .text {
+          .first-text {
+          }
+
+          .second-text {
+          }
+
+          h3 {
+          }
+
+          p {
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .logo {
+    }
+
+    .product {
+    }
+
+    .company {
+    }
+
+    .Connect {
+    }
+
+    p {
+    }
+
+    a {
+    }
+  }
+}
+
+/*############ for-tablet-landscape-up #############*/
+@media (min-width: 900px) {
+}
+
+/*############ for-desktop-up ###########*/
+@media (min-width: 1200px) {
+}
+
+/*############ for-big-desktop-up ##########*/
+@media (min-width: 1800px) {
+}
