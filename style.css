@@ -318,6 +318,282 @@ input {
     background-size: cover;
     border-radius: 0px 0px 0px 100px;
     height: 37.5rem;
+    margin-bottom: 6.25rem;
+    padding-left: 10.4375rem;
+    padding-right: 7.5rem;
+  }
+  main .hero header {
+    padding-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7.4375rem;
+  }
+  main .hero header .logo {
+    width: 5.125rem;
+    height: 2rem;
+    margin-right: 4rem;
+  }
+  main .hero header nav {
+    display: flex;
+  }
+  main .hero header nav a {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+  }
+  main .hero header nav li + li {
+    margin-left: 2rem;
+  }
+  main .hero header nav .header__first-ul {
+    display: flex;
+    margin-right: 26.6875rem;
+  }
+  main .hero header nav .header__second-ul {
+    display: flex;
+  }
+  main .hero header nav .header__second-ul .sign-up {
+    background: #ffffff;
+    border-radius: 28px;
+    color: #ff505c;
+    padding: 0.9375rem 2.5rem;
+  }
+  main .hero .text-hero h1 {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6.125rem;
+    text-align: center;
+    letter-spacing: -1.08px;
+    color: #ffffff;
+  }
+  main .hero .text-hero p {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2.6875rem;
+  }
+  main .hero .text-hero .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18.125rem;
+    margin: 0 auto;
+  }
+  main .hero .text-hero .buttons button {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    padding: 0.9375rem 1.0625rem;
+    border-radius: 28px;
+  }
+  main .hero .text-hero .buttons .btn--start {
+    color: #ff505c;
+    background: #ffffff;
+  }
+  main .hero .text-hero .buttons .btn--learn {
+    color: white;
+    background: transparent;
+    border: 1px solid #ffffff;
+  }
+  main .designed {
+    padding-left: 10.3125rem;
+    position: relative;
+  }
+  main .designed h2 {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.8125rem;
+    text-align: center;
+    letter-spacing: -0.84px;
+    color: #1f3e5a;
+    margin-bottom: 2.375rem;
+  }
+  main .designed .flex-designed {
+    display: flex;
+  }
+  main .designed .flex-designed .text {
+    text-align: left;
+    max-width: 33.75rem;
+  }
+  main .designed .flex-designed .text .first-text {
+    margin-bottom: 2.5rem;
+  }
+  main .designed .flex-designed .text .second-text {
+    margin-bottom: 17.0625rem;
+  }
+  main .designed .flex-designed .text h3 {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1f3e5a;
+    margin-bottom: 1rem;
+  }
+  main .designed .flex-designed .text p {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #4c5862;
+  }
+  main .designed .flex-designed .img {
+    margin-bottom: 2.875rem;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 48.875rem;
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  main .designed .flex-designed .img img {
+    -o-object-position: 210px;
+       object-position: 210px;
+  }
+  main .state {
+    background-image: url(./images/bg-pattern-circles.svg), linear-gradient(360deg, #2d2e40 0%, #3f4164 100%);
+    background-color: #2d2e40;
+    background-size: 1014px;
+    background-repeat: no-repeat;
+    background-position: -210px -500px;
+    border-radius: 0px 100px;
+    margin-bottom: 18.8125rem;
+    height: 25rem;
+    padding-top: 6.9375rem;
+    padding-right: 10.3125rem;
+    position: relative;
+  }
+  main .state .flex-state {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .state .flex-state .img {
+    width: 472px;
+    height: 499px;
+    position: absolute;
+    top: -49px;
+    left: 165px;
+  }
+  main .state .flex-state .text {
+    max-width: 33.75rem;
+  }
+  main .state .flex-state .text h2 {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: left;
+    letter-spacing: -1.2px;
+    color: #ffffff;
+    margin-bottom: 0.625rem;
+  }
+  main .state .flex-state .text p {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+  main .free {
+    padding-right: 10.3125rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  main .free .flex-free {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .free .flex-free .img {
+    margin-bottom: 2.875rem;
+    margin-bottom: 2.875rem;
+    position: absolute;
+    width: 50rem;
+    top: -165px;
+    left: -230px;
+  }
+  main .free .flex-free .text {
+    text-align: left;
+    margin-bottom: 19.25rem;
+    max-width: 33.125rem;
+  }
+  main .free .flex-free .text .first-text {
+    margin-bottom: 2.5rem;
+  }
+  main .free .flex-free .text h3 {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1f3e5a;
+    margin-bottom: torem(16);
+  }
+  main .free .flex-free .text p {
+    font-family: "Overpass Light";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #4c5862;
+  }
+  footer {
+    background: #24242c;
+    border-radius: 0px 100px 0px 0px;
+    padding: 4.375rem 10.3125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .logo {
+    width: 6.28875rem;
+    height: 2.464375rem;
+  }
+  footer p {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.3125rem;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer li {
+    margin-bottom: 0.4375rem;
+  }
+  footer a {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.75;
   }
 }
 /*############ for-tablet-landscape-up #############*/

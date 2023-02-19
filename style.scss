@@ -382,13 +382,15 @@ input {
       text-align: center;
       color: #ffffff;
       opacity: 0.75;
-      
     }
   }
 }
 
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
+  * {
+    // border: 4px solid red;
+  }
   main {
     // =========== hero ===================
     .hero {
@@ -398,23 +400,51 @@ input {
       background-size: cover;
       border-radius: 0px 0px 0px 100px;
       height: toRem(600);
+      margin-bottom: toRem(100);
+      padding-left: toRem(167);
+      padding-right: toRem(120);
 
       header {
+        padding-top: toRem(56);
+        display: flex;
+        align-items: center;
+        margin-bottom: toRem(119);
+
         .logo {
+          width: toRem(82);
+          height: toRem(32);
+          margin-right: toRem(64);
         }
 
         nav {
+          display: flex;
+
+          a {
+            font-family: "Ubuntu";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: white;
+          }
+
+          li + li {
+            margin-left: toRem(32);
+          }
+
           .header__first-ul {
-            li {
-              a {
-              }
-            }
+            display: flex;
+            margin-right: toRem(427);
           }
 
           .header__second-ul {
-            li {
-              a {
-              }
+            display: flex;
+
+            .sign-up {
+              background: #ffffff;
+              border-radius: 28px;
+              color: #ff505c;
+              padding: toRem(15) toRem(40);
             }
           }
         }
@@ -422,16 +452,54 @@ input {
 
       .text-hero {
         h1 {
+          font-family: "Overpass";
+          font-style: normal;
+          font-weight: 600;
+          font-size: toRem(64);
+          line-height: toRem(98);
+          text-align: center;
+          letter-spacing: -1.08px;
+          color: #ffffff;
         }
 
         p {
+          font-family: "Overpass";
+          font-style: normal;
+          font-weight: 400;
+          font-size: toRem(20);
+          line-height: toRem(31);
+          text-align: center;
+          color: #ffffff;
+          margin-bottom: toRem(43);
         }
 
         .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: toRem(290);
+          margin: 0 auto;
+
+          button {
+            font-family: "Ubuntu";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: right;
+            padding: toRem(15) toRem(17);
+            border-radius: 28px;
+          }
+
           .btn--start {
+            color: #ff505c;
+            background: #ffffff;
           }
 
           .btn--learn {
+            color: white;
+            background: transparent;
+            border: 1px solid #ffffff;
           }
         }
       }
@@ -439,40 +507,124 @@ input {
 
     // =========== designed ===============
     .designed {
+      padding-left: toRem(165);
+      position: relative;
+
       h2 {
+        font-family: "Overpass";
+        font-style: normal;
+        font-weight: 600;
+        font-size: toRem(40);
+        line-height: toRem(61);
+        text-align: center;
+        letter-spacing: -0.84px;
+        color: #1f3e5a;
+        margin-bottom: toRem(38);
       }
 
       .flex-designed {
+        display: flex;
+        
+
         .text {
+          text-align: left;
+          max-width: toRem(540);
+
           .first-text {
+            margin-bottom: toRem(40);
           }
 
           .second-text {
+            margin-bottom: toRem(273);
           }
 
           h3 {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            color: #1f3e5a;
+            margin-bottom: toRem(16);
           }
 
           p {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.5px;
+            color: #4c5862;
           }
         }
 
         .img {
+          margin-bottom: toRem(46);
+          position: absolute;
+          top: -40px;
+          right: 0;
+          width: toRem(782);
+          object-fit: none;
+
+          img {
+            object-position: 210px;
+          }
         }
       }
     }
 
     // =========== state ===============
     .state {
+      background-image: url(./images/bg-pattern-circles.svg),
+        linear-gradient(360deg, #2d2e40 0%, #3f4164 100%);
+      background-color: #2d2e40;
+      background-size: 1014px;
+      background-repeat: no-repeat;
+      background-position: -210px -500px;
+      border-radius: 0px 100px;
+      margin-bottom: toRem(301);
+      height: toRem(400);
+      padding-top: toRem(111);
+      padding-right: toRem(165);
+      position: relative;
+
       .flex-state {
+        display: flex;
+        justify-content: flex-end;
+
         .img {
+          width: 472px;
+          height: 499px;
+          position: absolute;
+          top: -49px;
+          left: 165px;
         }
 
         .text {
+          max-width: toRem(540);
+
           h2 {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 61px;
+            text-align: left;
+            letter-spacing: -1.2px;
+            color: #ffffff;
+            margin-bottom: toRem(10);
           }
 
           p {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            color: #ffffff;
           }
         }
       }
@@ -480,21 +632,54 @@ input {
 
     // =========== free ===============
     .free {
+      padding-right: toRem(165);
+      margin-bottom: toRem(40);
+      position: relative;
+
       .flex-free {
+        display: flex;
+        justify-content: flex-end;
+
         .img {
+          margin-bottom: toRem(46);
+          margin-bottom: toRem(46);
+          position: absolute;
+          width: toRem(800);
+          top: -165px;
+          left: -230px;
+          
         }
 
         .text {
+          text-align: left;
+          margin-bottom: toRem(308);
+          max-width: toRem(530);
+
           .first-text {
+            margin-bottom: toRem(40);
           }
 
           .second-text {
           }
 
           h3 {
+            font-family: "Overpass";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            color: #1f3e5a;
+            margin-bottom: torem(16);
           }
 
           p {
+            font-family: "Overpass Light";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.5px;
+            color: #4c5862;
           }
         }
       }
@@ -502,22 +687,47 @@ input {
   }
 
   footer {
+    background: #24242c;
+    border-radius: 0px 100px 0px 0px;
+    padding: toRem(70) toRem(165);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
     .logo {
-    }
-
-    .product {
-    }
-
-    .company {
-    }
-
-    .Connect {
+      width: toRem(100.62);
+      height: toRem(39.43);
     }
 
     p {
+      font-family: "Ubuntu";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 33px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: toRem(21);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      margin-bottom: toRem(7);
     }
 
     a {
+      font-family: "Ubuntu";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 33px;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.75;
     }
   }
 }
